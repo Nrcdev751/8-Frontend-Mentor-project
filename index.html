@@ -6,10 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Frontend Mentor | News homepage</title>
 
 </head>
-<body>
+<body id="body" class="">
   
   <section class="navbar">
     <div class="container">
@@ -17,15 +18,17 @@
           <ul class="logo">
            <img src="/assets/images/logo.svg" alt="">
           </ul>
-          <ul class="navbar-menu">
+          <ul id="burger-icon" class="navbar-menu ">
+            <li><button id="close-icon" onclick="closenav()"><img src="assets/images/icon-menu-close.svg" alt=""></button></li>
+            <li><a href=""></a></li>
             <li><a href="">Home</a></li>
             <li><a href="">New</a></li>
             <li><a href="">Popular</a></li>
             <li><a href="">Trending</a></li>
             <li><a href="">Categories</a></li>
           </ul>
-          <ul class="navbar-burger">
-            <img src="assets/images/icon-menu.svg" alt="">
+          <ul  class="navbar-burger ">
+            <button id="open-icon" onclick="opennav()"><img src="assets/images/icon-menu.svg" alt=""></button>
           </ul>
         </nav>
     </div>
